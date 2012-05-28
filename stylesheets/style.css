@@ -40,10 +40,11 @@ header nav {
 }
 
 header nav a {
-	padding: 9px 9px 9px 9px;
+	padding: 9px;
 	text-decoration: none;
 	margin-left: 10px;
 	color: #f2655f;
+	border: 1px solid transparent;
 }
 
 header nav a:visited {
@@ -51,7 +52,6 @@ header nav a:visited {
 }
 
 header nav a:hover {
-	padding: 8px 8px 8px 8px;
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3746f), to(#dd5e59));
 	background-image: -moz-linear-gradient(19% 75% 90deg,#dd5e59, #f3746f);
 	border: 1px solid #d95a55;
@@ -63,14 +63,12 @@ header nav a:hover {
 }
 
 header nav a:active {
-	padding: 8px 8px 8px 8px;
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dd5e59), to(#f3746f));
 	background-image: -moz-linear-gradient(19% 75% 90deg,#f3746f, #dd5e59);
-	border: 1px solid #ffffff;
-	-webkit-box-shadow: inset 0 1px 1px #b54945;
-	-moz-box-shadow: inset 0 1px 1px #b54945;
-	box-shadow: inset 0 1px 1px #b54945;
-	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 0px 1px#ffffff, inset 0 1px 1px #b54945;
+	-moz-box-shadow: 0px 0px 0px 1px#ffffff, inset 0 1px 1px #b54945;
+	box-shadow: 0px 0px 0px 1px#ffffff, inset 0 1px 1px #b54945;
+	border-radius: 2px;
 	color: #eeeeee;
 }
 
@@ -99,44 +97,47 @@ header nav a:active {
 /* === Footer === */
 
 footer {
-	height: 32px;
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#2d2c2c));;
-	background-image: -moz-linear-gradient(19% 75% 90deg,#2d2c2c, #383838);
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-	box-shadow: inset 0 -1px 0 #5e5e5e;
+  height: 32px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#2d2c2c));;
+  background-image: -moz-linear-gradient(19% 75% 90deg,#2d2c2c, #383838);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  box-shadow: inset 0 -1px 0 #5e5e5e;
+  padding-top: 4px;
 }
 
-.collumns {
-	display: inline;
+footer b {
+  font-size: 14px;
+  color: #e9e9e9;
+  font-weight: bold;
+  font-style: italic;
 }
 
-footer h5 {
-	font-size: 14px;
-	color: #e9e9e9;
-	font-weight: bold;
-	font-style: italic;
-	display: inline;
+footer p {
+  margin-bottom: 0;
+  color: #e9e9e9;
+}
+  
+  footer .alpha p {
+    text-align: left;
+  }
+  
+  footer .omega p {
+    text-align: right;
+  }
+
+footer a {
+  font-size: 14px;
+  color: #e9e9e9;
+  text-decoration: none;
+  font-style: italic;
 }
 
-footer nav {
-	margin-top: 2px;
-	margin-left: 10px;
-	color: #eeeeee;
-	display: inline;
+footer a:hover {
+  color: #ecbd9a;
 }
 
-footer nav a {
-	font-size: 14px;
-	color: #e9e9e9;
-	text-decoration: none;
-	font-style: italic;
+footer a:visited {
+  color: #eeeeee;
 }
 
-footer nav a:hover {
-	color: #ecbd9a;
-}
-
-footer nav a:visited {
-	color: #eeeeee;
-}
